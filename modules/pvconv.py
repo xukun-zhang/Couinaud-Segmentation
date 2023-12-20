@@ -160,7 +160,7 @@ class PVConv(nn.Module):
         # print("voxel_features.shape:", voxel_features.shape)
         
 
-        """这里需要将voxel_features经过一个输出卷积，用来输出预测的类别，然后将预测的类别与label一起返回，返回后进行loss监督"""
+
         
         voxel_targets, target_coords = self.voxelization(targets.float(), coords)#coords 坐标
 #         print("targets.shape, targets.max(), targets.min():", targets.shape, targets.max(), targets.min())
